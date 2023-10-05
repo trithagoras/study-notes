@@ -58,11 +58,11 @@ $$(\lambda x.x)(\lambda y.y)$$
 
 (Recall that these two functions are equivalent, even though their parameters are different.)
 
-We can use a new syntax here $[x \colonequals (\lambda y.y)]$, to indicate that $(\lambda y.y)$ will be substituted for all instances of $x$. We reduce this application like this:
+We can use a new syntax here $[x \coloneqq (\lambda y.y)]$, to indicate that $(\lambda y.y)$ will be substituted for all instances of $x$. We reduce this application like this:
 
 $$
 (\lambda x.x)(\lambda y.y)\\
-[x \colonequals (\lambda y.y)]\\
+[x \coloneqq (\lambda y.y)]\\
 \lambda y.y
 $$
 
@@ -79,9 +79,9 @@ $$((\lambda x.x)(\lambda y.y))z$$
 Which can be reduced to:
 $$
 (\lambda x.x)(\lambda y.y)z\\
-[x \colonequals (\lambda y.y)]\\
+[x \coloneqq (\lambda y.y)]\\
 (\lambda y.y)z\\
-[y \colonequals z]\\
+[y \coloneqq z]\\
 z
 $$
 
