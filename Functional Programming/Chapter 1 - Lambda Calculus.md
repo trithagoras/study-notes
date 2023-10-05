@@ -77,6 +77,7 @@ Applications in the lambda calculus are *left associative*, meaning they associa
 $$((\lambda x.x)(\lambda y.y))z$$
 
 Which can be reduced to:
+
 $$
 (\lambda x.x)(\lambda y.y)z\\
 [x \coloneqq (\lambda y.y)]\\
@@ -85,7 +86,7 @@ $$
 z
 $$
 
-This expression is now fully reduced, and the computation is complete.
+This expression is now fully reduced, and the computation is complete. Again, to summarise, beta reduction of an abstraction is simply the process of replacing the bound variables with the value of the argument and eliminating the head.
 
 Note that $z$ is meaningless here. In fact, it is known as a *free variable*.
 
@@ -104,8 +105,6 @@ $$
 $$
 
 because $y$ and $z$ may be different.
-
-Again, to summarise, beta reduction of an abstraction is simply the process of replacing the bound variables with the value of the argument and eliminating the head.
 
 
 ## Summary:
